@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  frontend:
+    ports:
+      - "3000:3000"
+    image: technocraticsolutions/awt-oms-frontend:latest
+  backend:
+    ports:
+      - "5000:5000"
+    image: technocraticsolutions/awt-oms-backend:latest
+  nginx:
+    ports:
+      - "80:80" 
+    image: nginx:latest
+
