@@ -1,0 +1,1027 @@
+{
+	"info": {
+		"_postman_id": "b267942e-0141-445c-8bac-379ac013aba9",
+		"name": "Project_19_Postman Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD Contact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"2\",\r\n    \"clientID\": \"2\",\r\n    \"mobileNUM\": \"832-455-8915\",\r\n    \"email\": \"AnotherEX@gmail.com\",\r\n    \"address\":\"East Autumn Drive 17253\",\r\n    \"city\":\"Houston\",\r\n    \"state\":\"Texas\",\r\n    \"zip\": 77429\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addcontact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addcontact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/allcontact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allcontact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contact by ClientID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/allcontact/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allcontact",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"2\",\r\n    \"clientID\": \"2\",\r\n    \"mobileNUM\": \"832-455-8915\",\r\n    \"email\": \"UpdateEX@gmail.com\",\r\n    \"address\":\"East Winter Drive 3547\",\r\n    \"city\":\"Houston\",\r\n    \"state\":\"Texas\",\r\n    \"zip\": 77002\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatecontact/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatecontact",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/deletecontact/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletecontact",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Family",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"3\",\r\n    \"clientID\": \"2\",\r\n    \"familyID\": \"2\",\r\n    \"firstname\": \"Jackson\",\r\n    \"lastname\":\"Reilly\",\r\n    \"relation\":\"Son\",\r\n    \"birthday\":\"Jan-11-1998\",\r\n    \"gender\": \"Male\",\r\n    \"Age\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Family",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/allfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Family by Client ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/allfamily/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allfamily",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Family",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"1\",\r\n    \"clientID\": 2,\r\n    \"familyID\": 2,\r\n    \"firstname\": \"George\",\r\n    \"lastname\":\"Reilly\",\r\n    \"relation\":\"Son\",\r\n    \"birthday\":\"Jan-11-1998\",\r\n    \"gender\": \"Male\",\r\n    \"Age\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatefamily/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatefamily",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Family",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/deletefamily/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletefamily",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientID\": \"2\",\r\n    \"School\": \"University of Texas\",\r\n    \"degree\": \"Bachelor in Agriculture\",\r\n    \"certification\":\"None\",\r\n    \"diploma\":\"Yes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET education",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET education by ClientID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/education/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"education",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Education",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientID\": 1,\r\n    \"School\": \"University of Maryland\",\r\n    \"degree\": \"Bachelor in Human Resources\",\r\n    \"certification\":\"None\",\r\n    \"diploma\":\"Yes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/education/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"education",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE education",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/education/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"education",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Worker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"2\",\r\n    \"workerID\": \"2\",\r\n    \"firstName\": \"William\",\r\n    \"lastName\":\"Mcniel\",\r\n    \"organization\":\"Bread of Life\",\r\n    \"mobileNum\":\"488-704-6626\",\r\n    \"email\":\"Example@gmail.com\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/worker",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"worker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Worker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/worker",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"worker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Worker by workerID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/worker/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"worker",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Worker",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"2\",\r\n    \"workerID\": \"2\",\r\n    \"firstName\": \"Brad\",\r\n    \"lastName\":\"Stacy\",\r\n    \"organization\":\"Bread of Life\",\r\n    \"mobileNum\":\"488-704-6626\",\r\n    \"email\":\"Example@gmail.com\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/worker/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"worker",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Worker",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/worker/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"worker",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/clientmentalhealth/Fiona/Smith/987-3595-89",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/clientmentalhealth/Fiona/Smith/987-3595-89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientmentalhealth",
+						"Fiona",
+						"Smith",
+						"987-3595-89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD employment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"1\",\r\n    \"clientID\": \"1\",\r\n    \"familyID\": \"1\",\r\n    \"workStatus\":\"Mcniel\",\r\n    \"occupation\":\"Bread of Life\",\r\n    \"yearlyInc\":45000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET employment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Employment by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Employment by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"1\",\r\n    \"clientID\": \"1\",\r\n    \"familyID\": \"1\",\r\n    \"workStatus\":\"EXAMPLE\",\r\n    \"occupation\":\"Bread of Life\",\r\n    \"yearlyInc\":45000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventID\": 2,\r\n    \"workerID\": 1,\r\n    \"org\": \"random org\",\r\n    \"eventDesc\": \"TES TEST TEST\",\r\n    \"eventAddress\": \"Texas\",\r\n    \"clients\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Client Through Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"clientID\": 22,\r\n    \"firstName\": \"GERALD TEST TEST TEST\",\r\n    \"lastName\": \"tester\",\r\n    \"birthday\": \"1990-03-02\",\r\n    \"ssn\": 505,\r\n    \"gender\": \"female\",\r\n    \"age\": 32,\r\n    \"familyID\": 2,\r\n    \"eventID\": 2,\r\n    \"events\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/event/6221adc08d99ea9aab39ad3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event",
+						"6221adc08d99ea9aab39ad3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Client based on _ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/client/6221a586c2bb62dadbb40dd7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"6221a586c2bb62dadbb40dd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Event by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/event/6221af3efe50423600dd9ede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event",
+						"6221af3efe50423600dd9ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Event by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/event/6221ac6138c5b2fc076ed805",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event",
+						"6221ac6138c5b2fc076ed805"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Event",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventID\": 2,\r\n    \"workerID\": 1,\r\n    \"org\": \"BRead of Life\",\r\n    \"eventDesc\": \"TES\",\r\n    \"eventAddress\": \"Texas\",\r\n    \"clients\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/event/6221af3efe50423600dd9ede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event",
+						"6221af3efe50423600dd9ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Report of Event and Worker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reports/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reports",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET report for event and client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reports/event/6221af3efe50423600dd9ede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reports",
+						"event",
+						"6221af3efe50423600dd9ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Client info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET client by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/client/6221b4d2ea0c48da0fdda766",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"6221b4d2ea0c48da0fdda766"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Client NORMALLY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientID\": 23,\r\n    \"firstName\": \"HAM\",\r\n    \"lastName\": \"CHEESE\",\r\n    \"birthday\": \"1990-03-02\",\r\n    \"ssn\": 505,\r\n    \"gender\": \"female\",\r\n    \"age\": 32,\r\n    \"familyID\": 2,\r\n    \"events\": \"None\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Client by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientID\": \"22\",\r\n    \"firstName\": \"HAM\",\r\n    \"lastName\": \"SAUERKRAUT\",\r\n    \"birthday\": \"1990-03-02\",\r\n    \"ssn\": 505,\r\n    \"gender\": \"female\",\r\n    \"age\": 32,\r\n    \"familyID\": 1,\r\n    \"events\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/client/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Client by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/client/6221bc2c5ec8a46625a31403",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"client",
+						"6221bc2c5ec8a46625a31403"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

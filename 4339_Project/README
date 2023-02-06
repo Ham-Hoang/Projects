@@ -1,0 +1,99 @@
+CIS 4339 Sprint 2 Group 19
+
+Team Members:
+Hamilton Hoang
+Luke Kovacs
+Perminder Singh
+
+Project Description:
+This application allows you to do all CRUD operations on all of our endpoints so that you
+can modify the information inside the database based on the schema provided in the application.
+These endpoints include Clients, Events, Workers, Education, Contacts, Employment, 
+and Family. The application also allows you to create reports based off of endpoints 
+such as seeing which clients are at which events. The application includes an external 
+api (https://cis-4339.herokuapp.com/api/v1/) that can accept data that begins from 
+outside of the main database. 
+
+
+
+To run our application:
+
+1. Clone the github repository.
+2. Open in Visual Studio Code.
+3. Run npm install for all libraries, middleware, and modules.
+4. In case of errors run npm install axios, npm install dotenv, npm install morgan, npm install cors, and npm install mongoose. 
+5. Be sure to have your .env file connection string reflect that of your local mongodb to successfully connect.
+6. Run node app.js to begin the application.
+7. Test the endpoints using Postman.
+
+
+
+
+CIS 4339 Sprint 3 Group 19
+
+Team Members:
+Hamilton Hoang
+Luke Kovacs
+Perminder Singh
+
+Project Description:
+This web application allows the user to do all CRUD operations for our application that creates a single point of interest for both CFC and Bread of Life. Our
+application allows you to create new Clients, Events, Contacts, Education, Employment, Family, and Workers as well as being able to see all of the indexes from the
+database on the web application. Our application also allows you to edit and delete any indexes from any of the collections.
+
+
+To run our application:
+1. Clone the github repository.
+2. Open the 4339 Project Kovacs folder in Visual Studio Code.
+3. Run npm install to install libraries, middleware, and modules needed for the backend (may need to run npm install axios separately).
+4. Open a second terminal and run cd frontend.
+5. Run npm install once in the frontend directory
+6. Run npm run dev to start the frontend
+7. Switch back to the backend terminal and run node app.js
+8. Either click on the link in the frontend terminal to go to http://localhost:3000/ or enter the URL into a web browser.
+
+
+CLOUD DEPLOYMENT INSTRUCTIONS:
+
+1. Open a Web Browser and direct yourself to this link https://account.mongodb.com/account/login?signedOut=true.
+
+2. Login through google email using mock credentials as follows:
+Email: 4339ServerTest@gmail.com
+Password:4339project
+
+3. On our project that is opened up on visual studio code once you get there, create a new terminal and follow steps below.
+
+4. Be sure to have the latest update for mongosh which you can check by entering into the terminal mongosh --version. If you have a version available proceed to next step.
+
+5.  In the terminal once again, paste this connection string as follows : mongosh "mongodb+srv://cluster0.zhwiu.mongodb.net/myFirstDatabase" --apiVersion 1 --username UHTestServer4339
+Hit enter and you will be prompted to enter the password. Credentials are as follows below:
+Mongo Cloud credentials are as follows:
+Username: UHTestServer4339
+Password : 4339project
+
+6. Once you enter the password you are connected to the mongo cloud interface on the website.
+
+7. Go to the backend app.js file. The mongoose connection string that is above and not commented out will allow the application to run and send data to the cloud.
+Open a new terminal and start the backend application with node app.js followed by opening a new terminal to run npm run dev to start the front end.
+
+8. Test application by using the CRUD and see the results of new data reflected on the cloud. This will work.
+
+-- Testing on local server -- 
+If you would like to test the application first on the local server, all you have to do is comment out the cloud connection string and uncomment the original connection below 
+that is below. Additional comments on the backend app.js file will help you familiarize yourself in using the local string rather than the cloud string.
+be sure to disable the mongosh terminal to disconnect with the cloud.
+
+Start the application like you would for the backend and frontend once local string is in use and the cloud string is commented out.
+
+ENJOY!!!
+
+
+
+
+
+
+
+
+
+
+
